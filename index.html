@@ -560,7 +560,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $a2diren.damage - $gedang&gt;&gt; 
       &lt;&lt;set $tili -= _drsh&gt;&gt;
       敌人检定：投掷结果_ed20 + 命中$a2diren.hit&lt;br&gt;
-      敌人反击命中！造成_drsh点伤害！
+      敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
               &lt;&lt;if $tili lte 0&gt;&gt;
               &lt;&lt;set $tili == 0&gt;&gt;
@@ -591,7 +591,7 @@ setup.GoTo = function GoTo (label, location) {
     &lt;&lt;set _drsh = $a2diren.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$a2diren.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
         &lt;&lt;if $tili lte 0&gt;&gt;
         &lt;&lt;set $tili == 0&gt;&gt;
@@ -683,7 +683,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $a2diren.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;
  敌人检定：投掷结果_efd20 + 命中$a2diren.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
 &lt;&lt;if $tili lte 0&gt;&gt;
 &lt;&lt;set $tili = 0&gt;&gt;
@@ -759,7 +759,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $a2diren.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$a2diren.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
             &lt;&lt;if $tili lte 0&gt;&gt;
             &lt;&lt;set $tili = 0&gt;&gt;
@@ -790,7 +790,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $a2diren.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;
  敌人检定：投掷结果_efd20 + 命中$a2diren.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
     &lt;&lt;if $tili lte 0&gt;&gt;
     &lt;&lt;set $tili = 0&gt;&gt;
     你体力不支倒在了地上，眼前变得一片漆黑……&lt;br&gt;
@@ -929,7 +929,7 @@ setup.GoTo = function GoTo (label, location) {
         &lt;&lt;if _ed20 + $bear.hit &gt;= $shanbi&gt;&gt;
         &lt;&lt;set $tili -= $bear.damage&gt;&gt;
         敌人检定：投掷结果_ed20 + 命中$bear.hit&lt;br&gt;
-        敌人命中！对你造成 $bear.damage 点伤害！你剩余体力：$tili&lt;br&gt;&lt;br&gt;
+        敌人命中！对你造成 $bear.damage 点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
               &lt;&lt;if $tili lte 0&gt;&gt;
               &lt;&lt;set $tili == 0&gt;&gt;
@@ -959,7 +959,7 @@ setup.GoTo = function GoTo (label, location) {
     &lt;&lt;if _efd20 + $bear.hit &gt;= $shanbi&gt;&gt;
     &lt;&lt;set $tili -= $bear.damage&gt;&gt;
     敌人检定：投掷结果_efd20 + 命中$bear.hit&lt;br&gt;
-    敌人反击命中！造成$bear.damage 点伤害！你剩余体力： $tili &lt;br&gt;&lt;br&gt;
+    敌人反击命中！造成$bear.damage 点伤害！&lt;br&gt;&lt;br&gt;你剩余体力： $tili &lt;br&gt;&lt;br&gt;
 
         &lt;&lt;if $tili lte 0&gt;&gt;
         &lt;&lt;set $tili == 0&gt;&gt;
@@ -1030,7 +1030,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _damage = $bear.damage&gt;&gt;
 &lt;&lt;set $tili -= _damage&gt;&gt;
 敌人检定：投掷结果_efd20 + 命中$bear.hit&lt;br&gt;
-敌人命中！造成 _damage点伤害！&lt;br&gt;
+敌人命中！造成 _damage点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
 &lt;&lt;if $tili lte 0&gt;&gt;
 &lt;&lt;set $tili = 0&gt;&gt;
@@ -1161,7 +1161,7 @@ setup.GoTo = function GoTo (label, location) {
        &lt;&lt;if _efd20 + $bear.hit &gt;= $shanbi&gt;&gt;
        &lt;&lt;set $tili -= $bear.damage&gt;&gt;
        敌人检定：投掷结果_efd20 + 命中$bear.hit&lt;br&gt;
-       敌人命中！对你造成$bear.damage点伤害！你剩余体力： $tili &lt;br&gt;
+       敌人命中！对你造成$bear.damage点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
             &lt;&lt;if $tili lte 0&gt;&gt;
             &lt;&lt;set $tili = 0&gt;&gt;
@@ -1191,7 +1191,7 @@ setup.GoTo = function GoTo (label, location) {
  &lt;&lt;if _efd20 + $bear.hit &gt;=  $shanbi &gt;&gt;
  &lt;&lt;set $tili -= $bear.damage&gt;&gt;
  敌人检定：投掷结果_efd20 + 命中$bear.hit&lt;br&gt;
- 敌人反击命中！造成$bear.damage 点伤害！
+ 敌人反击命中！造成$bear.damage 点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
     &lt;&lt;if $tili lte 0&gt;&gt;
     &lt;&lt;set $tili = 0&gt;&gt;
     你体力不支倒在了地上，眼前变得一片漆黑……&lt;br&gt;
@@ -1405,7 +1405,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $b2diren.damage - $gedang&gt;&gt; 
       &lt;&lt;set $tili -= _drsh&gt;&gt;&lt;br&gt;
       敌人检定：投掷结果_ed20 + 命中$b2diren.hit&lt;br&gt;
-      敌人反击命中！造成_drsh点伤害！
+      敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
               &lt;&lt;if $tili lte 0&gt;&gt;
               &lt;&lt;set $tili = 0&gt;&gt;&lt;br&gt;
@@ -1436,7 +1436,7 @@ setup.GoTo = function GoTo (label, location) {
     &lt;&lt;set _drsh = $b2diren.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;&lt;br&gt;
      敌人检定：投掷结果_efd20 + 命中$b2diren.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
         &lt;&lt;if $tili lte 0&gt;&gt;
         &lt;&lt;set $tili = 0&gt;&gt;&lt;br&gt;
@@ -1561,7 +1561,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $b2dirensj.damage - $gedang&gt;&gt; 
       &lt;&lt;set $tili -= _drsh&gt;&gt;
       敌人检定：投掷结果_ed20 + 命中$b2dirensj.hit&lt;br&gt;
-      敌人反击命中！造成_drsh点伤害！
+      敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
               &lt;&lt;if $tili lte 0&gt;&gt;
               &lt;&lt;set $tili = 0&gt;&gt;
@@ -1592,7 +1592,7 @@ setup.GoTo = function GoTo (label, location) {
     &lt;&lt;set _drsh = $b2dirensj.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$b2dirensj.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
         &lt;&lt;if $tili lte 0&gt;&gt;
         &lt;&lt;set $tili = 0&gt;&gt;
@@ -1626,7 +1626,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $b2dirensj.damage - $gedang&gt;&gt; 
 &lt;&lt;set $tili -= _drsh&gt;&gt;
 敌人检定：投掷结果_efd20 + 命中$b2dirensj.hit&lt;br&gt;
-敌人反击命中！造成_drsh点伤害！
+敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
 &lt;&lt;if $tili lte 0&gt;&gt;
 &lt;&lt;set $tili = 0&gt;&gt;
@@ -1695,7 +1695,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $b2dirensj.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$b2dirensj.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
             &lt;&lt;if $tili lte 0&gt;&gt;
             &lt;&lt;set $tili = 0&gt;&gt;
@@ -1726,7 +1726,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $b2dirensj.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;
  敌人检定：投掷结果_efd20 + 命中$b2dirensj.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
     &lt;&lt;if $tili lte 0&gt;&gt;
     &lt;&lt;set $tili = 0&gt;&gt;
     你体力不支倒在了地上，眼前变得一片漆黑……&lt;br&gt;
@@ -1778,7 +1778,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $b2diren.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;&lt;br&gt;
  敌人检定：投掷结果_efd20 + 命中$b2diren.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
 &lt;&lt;if $tili lte 0&gt;&gt;&lt;br&gt;
 &lt;&lt;set $tili = 0&gt;&gt;&lt;br&gt;
@@ -1895,7 +1895,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $b2diren.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;&lt;br&gt;
      敌人检定：投掷结果_efd20 + 命中$b2diren.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
             &lt;&lt;if $tili lte 0&gt;&gt;
             &lt;&lt;set $tili = 0&gt;&gt;&lt;br&gt;
@@ -1926,7 +1926,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $b2diren.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;&lt;br&gt;
  敌人检定：投掷结果_efd20 + 命中$b2diren.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
     &lt;&lt;if $tili lte 0&gt;&gt;
     &lt;&lt;set $tili = 0&gt;&gt;&lt;br&gt;
     你体力不支倒在了地上，眼前变得一片漆黑……&lt;br&gt;
@@ -2603,7 +2603,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $ma.damage - $gedang&gt;&gt; 
       &lt;&lt;set $tili -= _drsh&gt;&gt;
       敌人检定：投掷结果_ed20 + 命中$ma.hit&lt;br&gt;
-      敌人反击命中！造成_drsh点伤害！
+      敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
               &lt;&lt;if $tili lte 0&gt;&gt;
               &lt;&lt;set $tili = 0&gt;&gt;
@@ -2634,7 +2634,7 @@ setup.GoTo = function GoTo (label, location) {
     &lt;&lt;set _drsh = $ma.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$ma.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
         &lt;&lt;if $tili lte 0&gt;&gt;
         &lt;&lt;set $tili = 0&gt;&gt;
@@ -2688,7 +2688,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $ma.damage - $gedang&gt;&gt; 
 &lt;&lt;set $tili -= _drsh&gt;&gt;
 敌人检定：投掷结果_efd20 + 命中$ma.hit&lt;br&gt;
-敌人反击命中！造成_drsh点伤害！
+敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
 &lt;&lt;if $tili lte 0&gt;&gt;
 &lt;&lt;set $tili = 0&gt;&gt;
@@ -2786,7 +2786,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $ma.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$ma.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
             &lt;&lt;if $tili lte 0&gt;&gt;
             &lt;&lt;set $tili = 0&gt;&gt;
@@ -2817,7 +2817,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $ma.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;
  敌人检定：投掷结果_efd20 + 命中$ma.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
     &lt;&lt;if $tili lte 0&gt;&gt;
     &lt;&lt;set $tili = 0&gt;&gt;
     你体力不支倒在了地上，眼前变得一片漆黑……&lt;br&gt;
@@ -3056,7 +3056,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $dog.damage - $gedang&gt;&gt; 
       &lt;&lt;set $tili -= _drsh&gt;&gt;
       敌人检定：投掷结果_ed20 + 命中$dog.hit&lt;br&gt;
-      敌人反击命中！造成_drsh点伤害！
+      敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
               &lt;&lt;if $tili lte 0&gt;&gt;
               &lt;&lt;set $tili = 0&gt;&gt;
@@ -3087,7 +3087,7 @@ setup.GoTo = function GoTo (label, location) {
     &lt;&lt;set _drsh = $dog.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$dog.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
         &lt;&lt;if $tili lte 0&gt;&gt;
         &lt;&lt;set $tili = 0&gt;&gt;
@@ -3135,7 +3135,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $dog.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;
  敌人检定：投掷结果_efd20 + 命中$dog.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
 &lt;&lt;if $tili lte 0&gt;&gt;
 &lt;&lt;set $tili = 0&gt;&gt;
@@ -3261,7 +3261,7 @@ setup.GoTo = function GoTo (label, location) {
       &lt;&lt;set _drsh = $dog.damage - $gedang&gt;&gt; 
      &lt;&lt;set $tili -= _drsh&gt;&gt;
      敌人检定：投掷结果_efd20 + 命中$dog.hit&lt;br&gt;
-     敌人反击命中！造成_drsh点伤害！
+     敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
 
             &lt;&lt;if $tili lte 0&gt;&gt;
             &lt;&lt;set $tili = 0&gt;&gt;
@@ -3292,7 +3292,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set _drsh = $dog.damage - $gedang&gt;&gt; 
  &lt;&lt;set $tili -= _drsh&gt;&gt;
  敌人检定：投掷结果_efd20 + 命中$dog.hit&lt;br&gt;
- 敌人反击命中！造成_drsh点伤害！
+ 敌人反击命中！造成_drsh点伤害！&lt;br&gt;&lt;br&gt;你剩余体力：$tili&lt;br&gt;&lt;br&gt;
     &lt;&lt;if $tili lte 0&gt;&gt;
     &lt;&lt;set $tili = 0&gt;&gt;
     你体力不支倒在了地上，眼前变得一片漆黑……&lt;br&gt;
@@ -4020,7 +4020,7 @@ QQ：1226049631
 防御：$fangyu  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  格挡值：$gedang&lt;br&gt;
 &lt;br&gt;
 运转内功：盘蛇心经&lt;br&gt;
-内功描述：你偶尔所得之心法，因真气在体内走向如盘蛇般循环不息而命名。&lt;br&gt;
+内功描述：你偶然所得之心法，因真气在体内走向如盘蛇般循环不息而命名。&lt;br&gt;
 运转特效：你施放实招无需消耗内力。战斗胜利时恢复10点气血及5点内力。&lt;br&gt;
 &lt;br&gt;
 武学—裂山拳法：&lt;br&gt;
