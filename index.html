@@ -3171,7 +3171,9 @@ setup.GoTo = function GoTo (label, location) {
 [[【实招攻击】|D4实招]]&lt;br&gt;
 [[【虚招攻击】|D4虚招]]&lt;br&gt;
 [[【施放气招】|D4气招]]&lt;br&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="135" name="D4火盘" tags="nobr" position="3300,200" size="100,100">&lt;&lt;if $gamezy eq 1&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="135" name="D4火盘" tags="nobr" position="3300,200" size="100,100">
+	<<set $d4zy to 1>><<set $gamezy +=1>>
+	&lt;&lt;if $gamezy eq 1&gt;&gt;
 火盘一下就倒了，焦黑的燃料倾泻到地上，化作了一团团乌黑的碎屑。&lt;br&gt;
 四周原本凝滞的浓白雾气骤然一淡，仿佛被撕开了一道口子，但很快周遭的白雾翻涌着将缺口填补，看来山中类似的阵眼，仍在维持着这遮天蔽日的迷阵。&lt;br&gt;
 不过，你苏醒后一直被压制的内功此刻竟不由自主地运转，你用力握了握拳头，感觉这重获的力量。&lt;br&gt;&lt;&lt;set $mingzhong += 1&gt;&gt;&lt;&lt;set $shanbi += 1&gt;&gt;&lt;&lt;set $fangyu += 1&gt;&gt;&lt;&lt;set $gedang += 1&gt;&gt;&lt;&lt;set $wjsh +=2&gt;&gt;
@@ -3193,6 +3195,7 @@ setup.GoTo = function GoTo (label, location) {
 真正的阵眼，真正的战场，一直都在那片被浓雾包裹的、看不见的山顶。&lt;br&gt;&lt;&lt;set $mingzhong += 1&gt;&gt;&lt;&lt;set $shanbi += 1&gt;&gt;&lt;&lt;set $fangyu += 1&gt;&gt;&lt;&lt;set $gedang += 1&gt;&gt;&lt;&lt;set $wjsh +=2&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 &lt;br&gt;&lt;br&gt;
+	
 [[【…………】|D4遭遇]]</tw-passagedata><tw-passagedata pid="136" name="D4答应" tags="" position="3100,100" size="100,100">“一路辛苦，乖徒儿。”黄袍长者带着淡笑踱步上前，伸手搭上你的腕脉。
 两息之后，他却嫌恶地甩开你的手：
 “啧，白高兴一场。原来是个被蛊虫榨干了的短命种。”
