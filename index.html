@@ -126,7 +126,7 @@ setup.CheckSkill = function CheckSkill(skillName, difficulty) {
 	var total = roll + skillValue;
 	
 	// 判断结果
-	var success = total > difficulty;
+	var success = total >= difficulty;
 	
 	// 返回结果对象
 	return {
