@@ -2097,6 +2097,7 @@ setup.GoTo = function GoTo (label, location) {
 这个洞穴为四方型布局，四周墙壁及地板平整，明显是人工开凿出来的。&lt;br&gt;
 洞内四处散布着不同大小的木板木棍，看形状你能认出其中有木桌、双人床、还有柜子、凳子等等，但现在一切都被大火烧成焦碳……&lt;br&gt;
 &lt;br&gt;
+&lt;&lt;if $yxl eq 0&gt;&gt;
 &lt;&lt;set $result = setup.CheckSkill(&quot;tancha&quot;, 8)&gt;&gt;
 &lt;&lt;= setup.ShowCheckResult($result)&gt;&gt;
 
@@ -2115,7 +2116,13 @@ setup.GoTo = function GoTo (label, location) {
 &lt;br&gt;&lt;br&gt;
 [[【离开洞穴】|B4遭遇-王]]&lt;br&gt;
 
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="B4检查刻字" tags="nobr" position="1200,100" size="100,100">你轻轻擦拭那凹凸不平的位置。&lt;br&gt;
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;else&gt;&gt;
+嗯，一切都烧成了焦炭，没什么值得注意的了。&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+[[【离开洞穴】|B4遭遇-王]]&lt;br&gt;
+&lt;&lt;endif&gt;&gt;
+</tw-passagedata><tw-passagedata pid="79" name="B4检查刻字" tags="nobr" position="1200,100" size="100,100">你轻轻擦拭那凹凸不平的位置。&lt;br&gt;
 随着灰烬脱落，三个凌冽的刻字逐渐浮现——安乐居&lt;br&gt;
 原来这是一块石门匾。&lt;br&gt;
 在刻字的下方，你发现了一个较小的署名：&quot;唐悠&quot;。&lt;br&gt;
@@ -3464,6 +3471,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;set $hsyw to 0&gt;&gt;//褐色药丸
 &lt;&lt;set $huobaopen to 0&gt;&gt;//火把熄灭/点燃
 &lt;&lt;set $yaocaibao to 0&gt;&gt;//药材包裹
+&lt;&lt;set $yxl to 0&gt;&gt;//项链
 
 /* 全局开关 */
 &lt;&lt;set $gamezy to 0&gt;&gt;
