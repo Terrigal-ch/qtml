@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="乱·江湖之穷徒末路1.0发布版" startnode="166" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="5e2e9297-5fc3-4550-8094-82bf356bcee1" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">//返回
+	<tw-storydata name="乱·江湖之穷徒末路1.0发布版" startnode="166" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="5e2e9297-5fc3-4550-8094-82bf356bcee1" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">//返回
 predisplay["Menu Return"] = function (taskName) {
 	if (! tags().includes("noreturn")) {
 		State.variables.return = passage();
@@ -450,7 +450,7 @@ setup.GoTo = function GoTo (label, location) {
 
 
 &lt;&lt;if $hsyw gt 0&gt;&gt;[[【给他喂褐色药丸】|A1治疗][$hsyw -=1,$a1cyr += 3]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $green gt 0&gt;&gt;[[【给他喂翠绿药草】|A1治疗][$greency -=1,$a1cyr += 4]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $greency gt 0&gt;&gt;[[【给他喂翠绿药草】|A1治疗][$greency -=1,$a1cyr += 4]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
 [[【搜索他的物品】|A1搜索]]
 &lt;&lt;if $a1gc eq 0&gt;&gt;[[【**观察他的伤势**】|A1观察伤势]]&lt;&lt;elseif $a1gc eq 1&gt;&gt;[[【**用内力平息伤势**】|A1内力救治]]&lt;&lt;else&gt;&gt; &lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="A1采药人2" tags="" position="800,1550" size="100,100">“嘶……哈……”他深呼吸了口气，缓缓说道：“我记得你……我在[[【澧州】|澧州]]见过你……”
 
@@ -4141,7 +4141,7 @@ QQ：1226049631
 &lt;br&gt;
 [[【**探查-观察四周**】|A3遭遇]]&lt;font color=&quot;#f44283&quot;&gt;&lt;i&gt;注意！当选项带有**符号标记时，说明该行为需要进行一次技能检定&lt;/i&gt;&lt;/font&gt;&lt;br&gt;
 
-&lt;font color=&quot;#f44283&quot;&gt;&lt;i&gt;技能检定：投掷一枚20面骰子，结果数值+对应技能加值后，若总数值大于等于检定难度，则检定成功。&lt;/i&gt;&lt;/font&gt;&lt;br&gt;
+&lt;font color=&quot;#f44283&quot;&gt;&lt;i&gt;技能检定：投掷一枚20面骰子，结果数值+对应技能加值后，若总数值大于检定难度，则检定成功。&lt;/i&gt;&lt;/font&gt;&lt;br&gt;
 在TRPG规则下，投掷动作由玩家操作，但为了游戏顺畅，本游戏的所有投掷均由系统代劳。
 &lt;br&gt;
 &lt;br&gt;
