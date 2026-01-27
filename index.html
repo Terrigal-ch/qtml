@@ -315,12 +315,12 @@ setup.GoTo = function GoTo (label, location) {
 &lt;br&gt;&lt;br&gt;
 [[【应该没错吧？】|B4问答]]&lt;br&gt;
 
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="A1不扒拉" tags="" position="1000,1250" size="100,100">&lt;&lt;set a1cyr to 0&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="A1不扒拉" tags="" position="1000,1250" size="100,100">&lt;&lt;set $a1cyr to 0&gt;&gt;
 只听“咔嚓”一声，你确信那只手与他的主人再也不会妨碍你了。
 
 [[【搜索棚屋】|A1棚屋]]
 [[【远离此处】|A1遭遇]]</tw-passagedata><tw-passagedata pid="7" name="A1不扒拉2" tags="" position="1000,1350" size="100,100">你默默看着那只手轻触你的脚背……
-&lt;&lt;set a1cyr to 0&gt;&gt;
+&lt;&lt;set $a1cyr to 0&gt;&gt;
 敲了十来下后，那只手也没再动弹了。
 
 [[【搜索棚屋】|A1棚屋]]
@@ -373,7 +373,10 @@ setup.GoTo = function GoTo (label, location) {
 &lt;br&gt;&lt;br&gt;
 [[【把他藏起来】|A1藏]]&lt;br&gt;
 [[【就这样吧】|A1遭遇]]&lt;br&gt;
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="A1治疗" tags="nobr" position="800,1450" size="100,100">你轻轻捏开他干裂的嘴唇，翻出身上携带的药物，捏碎后送入他的嘴中。&lt;br&gt;
+&lt;&lt;else&gt;&gt;
+[[【该走了】|A1遭遇]]&lt;br&gt;
+&lt;&lt;endif&gt;&gt;
+</tw-passagedata><tw-passagedata pid="12" name="A1治疗" tags="nobr" position="800,1450" size="100,100">你轻轻捏开他干裂的嘴唇，翻出身上携带的药物，捏碎后送入他的嘴中。&lt;br&gt;
 &lt;br&gt;
 但很明显，他已经虚弱到连吞咽的力气都没有了。&lt;br&gt;
 &lt;br&gt;
@@ -452,7 +455,10 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;if $hsyw gt 0&gt;&gt;[[【给他喂褐色药丸】|A1治疗][$hsyw -=1,$a1cyr += 3]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $greency gt 0&gt;&gt;[[【给他喂翠绿药草】|A1治疗][$greency -=1,$a1cyr += 4]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
 [[【搜索他的物品】|A1搜索]]
-&lt;&lt;if $a1gc eq 0&gt;&gt;[[【**观察他的伤势**】|A1观察伤势]]&lt;&lt;elseif $a1gc eq 1&gt;&gt;[[【**用内力平息伤势**】|A1内力救治]]&lt;&lt;else&gt;&gt; &lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="A1采药人2" tags="" position="800,1550" size="100,100">“嘶……哈……”他深呼吸了口气，缓缓说道：“我记得你……我在[[【澧州】|澧州]]见过你……”
+&lt;&lt;if $a1gc eq 0&gt;&gt;[[【**观察他的伤势**】|A1观察伤势]]&lt;&lt;elseif $a1gc eq 1&gt;&gt;[[【**用内力平息伤势**】|A1内力救治]]&lt;&lt;else&gt;&gt; &lt;&lt;endif&gt;&gt;
+
+&lt;&lt;link [[【不管他了】|A1遭遇]]&gt;&gt;&lt;&lt;set $a1cyr to 0&gt;&gt;&lt;&lt;/link&gt;&gt;
+</tw-passagedata><tw-passagedata pid="19" name="A1采药人2" tags="" position="800,1550" size="100,100">“嘶……哈……”他深呼吸了口气，缓缓说道：“我记得你……我在[[【澧州】|澧州]]见过你……”
 
 下一刻，一双血手紧紧地拉扯你的衣服：“为何你要助纣为虐？！”
 
@@ -4141,7 +4147,7 @@ QQ：1226049631
 &lt;br&gt;
 [[【**探查-观察四周**】|A3遭遇]]&lt;font color=&quot;#f44283&quot;&gt;&lt;i&gt;注意！当选项带有**符号标记时，说明该行为需要进行一次技能检定&lt;/i&gt;&lt;/font&gt;&lt;br&gt;
 
-&lt;font color=&quot;#f44283&quot;&gt;&lt;i&gt;技能检定：投掷一枚20面骰子，结果数值+对应技能加值后，若总数值大于检定难度，则检定成功。&lt;/i&gt;&lt;/font&gt;&lt;br&gt;
+&lt;font color=&quot;#f44283&quot;&gt;&lt;i&gt;技能检定：投掷一枚20面骰子，结果数值+对应技能加值后，若总数值大于等于检定难度，则检定成功。&lt;/i&gt;&lt;/font&gt;&lt;br&gt;
 在TRPG规则下，投掷动作由玩家操作，但为了游戏顺畅，本游戏的所有投掷均由系统代劳。
 &lt;br&gt;
 &lt;br&gt;
