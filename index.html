@@ -2675,7 +2675,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;font color=&quot;#228B22&quot;&gt;&lt;b&gt;获得物品-褐色药丸x1&lt;/b&gt;&lt;/font&gt;&lt;&lt;set $hsyw += 1&gt;&gt;
 &lt;&lt;set $d1st to 1&gt;&gt;
 
-&lt;&lt;if $d1zy eq 0&gt;&gt;[[【破坏火盘】|D1火盘]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $d1zy neq 1&gt;&gt;[[【破坏火盘】|D1火盘][$gamezy +=1]]&lt;&lt;endif&gt;&gt;
 [[返回|D1遭遇]]</tw-passagedata><tw-passagedata pid="116" name="D1战斗" tags="nobr" position="3100,1300" size="100,100">你躲开飞驰的弹丸，向他冲去！他冷哼一声，举起另一颗弹丸——&lt;br&gt;&lt;br&gt;
 敌人：$ma.name&lt;br&gt;
 敌人生命值：$ma.hp&lt;br&gt;
