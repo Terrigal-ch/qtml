@@ -420,7 +420,7 @@ setup.GoTo = function GoTo (label, location) {
 &lt;&lt;endif&gt;&gt;
 
 
-[[【返回】|A1采药人]]&lt;br&gt;</tw-passagedata><tw-passagedata pid="16" name="A1询问" tags="nobr" position="700,1550" size="100,100">他死死盯着你的眼睛，像在审视，也像在辨认。几个呼吸之后，他绷紧的手指渐渐松开了。
+[[【返回】|A1采药人]]&lt;br&gt;</tw-passagedata><tw-passagedata pid="16" name="A1询问" tags="" position="700,1550" size="100,100">他死死盯着你的眼睛，像在审视，也像在辨认。几个呼吸之后，他绷紧的手指渐渐松开了。
 
 “原来如此……连你也逃不过他们的魔爪……”
 他扯了扯嘴角，露出一个虚弱却恍然的苦笑。
@@ -452,8 +452,8 @@ setup.GoTo = function GoTo (label, location) {
 你赶紧加快动作，小心地挪开压在他身上的最后两具尸体。这是个瘦削的中年男人，背上还绑着空药篓，胸前一道可怖的伤口仍在缓慢渗血。你想扶他半坐起来，可他浑身冰冷，像一截浸透夜露的枯木。
 
 
-&lt;&lt;if $hsyw gt 0&gt;&gt;[[【给他喂褐色药丸】|A1治疗][$hsyw -=1,$a1cyr += 3]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $greency gt 0&gt;&gt;[[【给他喂翠绿药草】|A1治疗][$greency -=1,$a1cyr += 4]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $hsyw gt 0&gt;&gt;[[【给他喂褐色药丸】|A1治疗][$hsyw -=1,$a1cyr to 3]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $greency gt 0&gt;&gt;[[【给他喂翠绿药草】|A1治疗][$greency -=1,$a1cyr to 4]]&lt;&lt;else&gt;&gt;&lt;&lt;endif&gt;&gt;
 [[【搜索他的物品】|A1搜索]]
 &lt;&lt;if $a1gc eq 0&gt;&gt;[[【**观察他的伤势**】|A1观察伤势]]&lt;&lt;elseif $a1gc eq 1&gt;&gt;[[【**用内力平息伤势**】|A1内力救治]]&lt;&lt;else&gt;&gt; &lt;&lt;endif&gt;&gt;
 
